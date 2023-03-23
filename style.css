@@ -1,0 +1,457 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Google Sans Regular";
+    box-sizing: border-box;
+}
+body{ background-image:url(https://wallpapercave.com/wp/wp5901457.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    overflow:hidden; font-family:Arial, Helvetica, sans-serif;
+    
+}
+
+header{
+    width: 100%;
+    height: 80px;
+    background-color: rgba(47, 39, 39, 0.194);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+    position: fixed;
+
+}
+.logo{
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(138, 11, 40);
+
+}
+
+.hamburger{
+    display: none;
+}
+.nav_bar ul{
+    display: flex;
+
+}
+.nav_bar ul li a{
+    display: block;
+    color: #ff2d75;
+    font-size: 20px;
+    padding: 10px 25px;
+    border-radius: 50px;
+    transition: 0.2s;
+    margin: 0 5px;
+    text-decoration: none;
+}
+.nav_bar ul li a:hover{
+    color: rgba(77, 162, 34, 0.779);
+    background: rgb(10, 62, 117);
+}
+.nav_bar ul li a.active{
+    color: rgb(147, 185, 42);
+    background: rgb(12, 5, 5);
+}
+h1{
+    top: 100px;
+    color: whitesmoke;
+    font-size: 90px;
+    font-weight: 600;
+    margin-top: 16%;
+    margin-left: 50px;
+
+}
+#introduction{
+    color: #cbcbd9;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+
+
+/* about us style*/
+
+
+#about h2{
+    color: white;
+    text-align: center;
+    font-size: 85px;
+    font-weight: 600;
+    margin-top: 30px;
+    padding-top: 10px;
+}
+#about p{
+    color: greenyellow;
+    font-size: 15px;
+
+}
+#classes h2{
+    color: #c6c8c8;
+    font-size: 45px;
+    font-weight: 600;
+    text-align: center;
+}
+#classes .spin_class{
+    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px 10px;
+}
+
+#classes .CrossFit{
+    display: flex;
+    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px 10px;
+}
+
+#classes .Vinyasa{
+    display: flex;
+    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 7px 4px;
+}
+#classes .Zumba{
+    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px 9px;
+}
+
+
+
+#classes p{
+    color: rgb(239, 242, 233);
+    font-size: large;
+    font-weight: bold;
+}
+#facilities h2{
+    color: white;
+    font-size: 45px;
+    font-weight: 250;
+    text-align: center;
+}
+#facilities p{
+    color: greenyellow;
+    font-size: 15px;
+
+}
+#facilities ul li{
+    color: greenyellow;
+    font-size: 15px;
+}
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    height: 300px;
+}
+#personaltraining h2{
+    color: white;
+    font-size: 45px;
+    font-weight: 250;
+    text-align: center;
+}
+#personaltraining p{
+    color: greenyellow;
+    font-size: 15px;
+}
+#personaltraining ul li{
+    color: white;
+    font-size: 12px;
+}
+#membership h2{
+    color: white;
+    text-align: center;
+    font-size: 45px;
+    font-weight: 250;
+}
+#membership p{
+    color: greenyellow;
+    font-size: 15px;
+}
+/*contact style*/
+
+.head3 h3{
+    padding-top: 25px;
+    color: white;
+    font-size: 80px;
+    font-weight: 200;
+    text-align: center;
+}
+.head3 p{
+    color: greenyellow;
+    font-size: 25px;
+}
+.head3 ul li a{
+    color: white;
+    justify-content: space-between;
+}
+.enquire h3{
+    color: white;
+    font-size: 45px;
+    font-weight: 250;
+    text-align: center;
+}
+
+.enquire p{
+    color: greenyellow;
+    font-size: 15px;
+
+}
+.enquire span{
+    color: white;
+    font-size: 15px;
+}
+
+/*end of contact style*/
+/* sing up style starts here*/
+
+
+
+.head{
+    text-align: center;
+    color: #5033e2;
+}
+.info p{
+    font-size: 25px;
+    margin-left: 30px;
+}
+.container{
+     width:380px;
+margin:auto; border-radius:25px; background-color:rgbc(0,0,0,0,1);
+box-shadow:0 0 1px #333
+        }
+.hearder{ text-align:center;
+padding-top:65px;
+position: fixed;
+        }
+#form_head{
+    text-align: center;
+    font-size:45px;
+    color:#c6c8c8
+    
+} 
+form span label{
+    color: white;
+}
+.loren{
+    color: wheat;
+    font-size: 15px;
+}
+.main{text-align:center}
+.main fieldset{
+    padding: 30px 80px;
+    margin-left: 400px;
+    margin-right: 400px;
+    border-radius: 20px;
+    background: rgba(47, 39, 39, 0.194);
+}
+
+
+.main .input{ 
+    width:300px;
+height:40px;
+ border:none;
+outline:none;
+ padding-left:40px;
+  box-sizing:border-box;
+font-size:15px;
+ color: #FFCC00;
+  margin: bottom 40px
+}
+.main input .submit{ 
+    width:100px;
+height:40px;
+ border:none;
+outline:none;
+ padding-left:40px;
+  box-sizing:border-box;
+font-size:15px;
+ color: #FFCC00;
+  margin: bottom 40px
+}
+
+.main submit{
+ padding-left:0px;
+ background-color:#3333FF;
+  letter-spacing:1px;
+ font-weight:bold
+}
+ .main span{position:relative;
+ }
+ .input{
+    border-radius: 10px;
+ }
+ .submit{
+    border-radius: 13px;
+    padding: 5px 18px;
+ }
+.payment li{
+    font-size: 35px;
+    color: skyblue;
+}
+ 
+
+/* sing up style ends here*/
+
+/* footer style*/
+.footer{
+    background: rgb(36, 59, 60);
+    text-align: center;
+    color: #b2b2b2;
+    font-size: 1.3rem;
+    bottom: 0;
+    margin-bottom: 0;
+    
+}
+
+/* end footer style*/
+
+@media only screen and (max-width: 1320px) {
+    body{
+        background-size: cover;
+        
+    }
+    header{
+        padding: 0 50px;
+    }
+    .container{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+    
+}
+.bubbles span{
+    position: relative;
+    width: 20px;
+    height: 20px;
+}
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    height: 300px;
+}
+
+}
+@media only screen and (max-width: 1000px) {
+    body{
+        background-size: cover;
+        
+    }
+    header{
+        padding: 0 50px;
+    }
+    .bubbles span{
+        position: relative;
+        width: 10px;
+        height: 10px;
+}
+#introduction p{
+    font-size: 15px;
+    }
+    .column {
+        float: left;
+        width: 33.33%;
+        padding: 10px;
+        height: 300px;
+    }
+    .image{
+        height: 200px;
+        width: 300px;
+    }
+    #classes .spin_class{
+        display: flex;
+        justify-content: space-between;
+    
+        grid-template-columns: repeat(2, 1fr);
+        
+    }
+    
+    #classes .CrossFit{
+        display: flex;
+        justify-content: space-between;
+        
+        grid-template-columns: repeat(2, 1fr);
+        
+    }
+    
+    #classes .Vinyasa{
+        display: flex;
+        justify-content: space-between;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #classes .Zumba{
+        display: flex;
+        justify-content: space-between;
+    
+        grid-template-columns: repeat(2, 1fr);
+        
+    }
+}
+@media only screen and (max-width: 800px) {
+    body{
+        background-size: cover;
+        
+    }
+    .hamburger{
+        display: block;
+        cursor: pointer;
+    }
+    .hamburger .line{
+        width: 30px;
+        height: 3px;
+        background: rgb(227, 223, 223);
+        margin: 6px 0;
+    }
+    .nav_bar{
+        height: 0;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0px;
+        width: 40vw;
+        background: rgb(76, 68, 68);
+        transition: 0.5s;
+        overflow: hidden;
+    }
+    .nav_bar.active{
+        height: 350px;
+    }
+    .nav_bar ul{
+        display: block;
+        width: fit-content;
+        margin: 80px auto 0 auto;
+        text-align: left;
+        transition: 0.5s;
+        opacity: 1;
+    }
+    .nav.bar.active ul{
+        opacity: 1;
+    }
+    .nav_bar ul li a{
+        margin-bottom: 12px;
+        color: red;
+    }
+    .column {
+        float: left;
+        width: 33.33%;
+        padding: 10px;
+        height: 300px;
+    }
+    .image{
+        height: 100px;
+        width: 200px;
+    }
+}

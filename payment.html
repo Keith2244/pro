@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    
+    <!-- custom css file link  -->
+    <style>
+      html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+    width: 12px;
+
+}
+::-webkit-scrollbar-track{
+    background: #333;
+}
+::-webkit-scrollbar-thumb{
+  background: #e3e1e5;  
+}
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+*{
+  font-family: 'Poppins', sans-serif;
+  margin:0; padding:0;
+  box-sizing: border-box;
+  outline: none; border:none;
+  text-transform: capitalize;
+  transition: all .2s linear;
+}
+body{
+    background-image:url(https://wallpapercave.com/wp/wp5901457.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:25px;
+  min-height: 100vh;
+  background: linear-gradient(90deg, #2ecc71 60%, #27ae60 40.1%);
+  margin-left: 300px;
+  margin-right: 300px;
+}
+
+.container form{
+  padding:20px;
+  width:700px;
+  background: #fff;
+  box-shadow: 0 5px 10px rgba(0,0,0,.1);
+  
+}
+
+.container form .row{
+  display: flex;
+  flex-wrap: wrap;
+  gap:15px;
+}
+
+.container form .row .col{
+  flex:1 1 250px;
+}
+
+.container form .row .col .title{
+  font-size: 20px;
+  color:#333;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.container form .row .col .inputBox{
+  margin:15px 0;
+}
+
+.container form .row .col .inputBox span{
+  margin-bottom: 10px;
+  display: block;
+}
+
+.container form .row .col .inputBox input{
+  width: 100%;
+  border:1px solid #ccc;
+  padding:10px 15px;
+  font-size: 15px;
+  text-transform: none;
+}
+
+.container form .row .col .inputBox input:focus{
+  border:1px solid #000;
+}
+
+.container form .row .col .flex{
+  display: flex;
+  gap:15px;
+}
+
+.container form .row .col .flex .inputBox{
+  margin-top: 5px;
+}
+
+.container form .row .col .inputBox img{
+  height: 34px;
+  margin-top: 5px;
+  filter: drop-shadow(0 0 1px #000);
+}
+
+.container form .submit-btn{
+  width: 100%;
+  padding:12px;
+  font-size: 17px;
+  background: #27ae60;
+  color:#fff;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.container form .submit-btn:hover{
+  background: #2ecc71;
+}
+.head h1{
+  color: crimson;
+  text-align: center;
+  font-size: 80px;
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: 700;
+
+}
+.description p{
+  color: #fff;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}
+.description h2{
+  color: #4fc3dc;
+  font-size: 40px;
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: 300;
+}
+.client p{
+  color: #fff;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}
+    </style>
+</head>
+<body>
+  <div class="head">
+    <h1>
+      Fitlife Gym Payment Page
+    </h1>
+  </div>
+  <br>
+  <div class="description">
+    <p>
+      At Fitlife Gym, we're dedicated to providing our clients with the best possible fitness experience. 
+      That's why we offer a range of convenient payment options for our services. 
+      Whether you're looking to pay for a membership, personal training sessions, or any other fitness program we offer, we've got you covered.
+    </p>
+    <br><br>
+    <h2>
+      Payment Methods
+    </h2>
+    <br><
+    <p>
+      We currently accept payment via Visa, Mastercard, and PayPal. 
+      To make a payment, simply select your preferred payment method and follow the prompts. 
+      We use industry-standard encryption and security protocols to ensure that your payment information is safe and secure.
+    </p>
+  </div>
+  <br><br>
+
+<div class="container">
+
+    <form action="" onsubmit="return validateForm">
+
+        <div class="row">
+
+            <div class="col">
+
+                <h3 class="title">billing address</h3>
+
+                <div class="inputBox">
+                    <span>full name :</span>
+                    <input type="text" placeholder="Your name">
+                </div>
+                <div class="inputBox">
+                    <span>email :</span>
+                    <input type="email" placeholder="example@example.com">
+                </div>
+                <div class="inputBox">
+                    <span>address :</span>
+                    <input type="text" placeholder="room - street - locality">
+                </div>
+                <div class="inputBox">
+                    <span>city :</span>
+                    <input type="text" placeholder="nairobi">
+                </div>
+
+                <div class="flex">
+                    <div class="inputBox">
+                        <span>state :</span>
+                        <input type="text" placeholder="Kenya">
+                    </div>
+                    <div class="inputBox">
+                        <span>zip code :</span>
+                        <input type="text" placeholder="123 456">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col">
+
+                <h3 class="title">payment</h3>
+
+                <div class="inputBox">
+                    <span>cards accepted :</span>
+                    <img src="card_img.png" alt="">
+                </div>
+                <div class="inputBox">
+                    <span>name on card :</span>
+                    <input type="text" placeholder="card name">
+                </div>
+                <div class="inputBox">
+                    <span>credit card number :</span>
+                    <input type="number" placeholder="1111-2222-3333-4444">
+                </div>
+                <div class="inputBox">
+                    <span>exp month :</span>
+                    <input type="text" placeholder="january">
+                </div>
+
+                <div class="flex">
+                    <div class="inputBox">
+                        <span>exp year :</span>
+                        <input type="number" placeholder="2023">
+                    </div>
+                    <div class="inputBox">
+                        <span>CVV :</span>
+                        <input type="text" placeholder="123">
+                    </div>
+                </div>
+
+            </div>
+    
+        </div>
+
+        <input type="submit" value="proceed to checkout" class="submit-btn">
+
+    </form>
+
+</div>  
+<br><br><br>  
+
+<div class="client">
+  <p>
+    Our payment interface is designed to be user-friendly and intuitive. 
+    You'll be guided through the payment process step-by-step, and can easily enter your payment details and submit your payment. 
+    If you have any questions or concerns, our customer service team is available to assist you. <br>
+Thank you for choosing Fitlife Gym. We're excited to help you achieve your fitness goals.
+  </p>
+</div>
+<br><br><br> 
+<br>
+
+<script>
+    function validateForm(){  
+var name=document.myform.name.value;  
+var password=document.myform.password.value;  
+
+if (name==null || name==""){  
+alert("Name can't be blank");  
+return false;  
+}else if(password.length<6){  
+alert("Password must be at least 6 characters long.");  
+return false;  
+}  
+}  
+    function validateEmail(email) {
+var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+return re.test(String(email).toLowerCase());
+}
+
+function validateForm() {
+var email = document.getElementById("email").value;
+if (validateEmail(email)) {
+  alert("Email address is valid");
+  return true;
+} else {
+  alert("Email address is not valid");
+  return false;
+}
+}
+
+  </script>
+    
+</body>
+</html>

@@ -1,0 +1,163 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="java.js"></script>
+<title>FitLife Gym</title>
+</head>
+
+<style>
+    html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+    width: 12px;
+
+}
+::-webkit-scrollbar-track{
+    background: #333;
+}
+::-webkit-scrollbar-thumb{
+  background: white;  
+}
+</style>
+<body>
+    <header>
+        <div class="logo">FitLife Gym</div>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav_bar active">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+                <li><a href="signup.html">Sing Up</a></li>
+              </ul>
+        </nav>
+      </header>
+
+    <h1 class="head">Welcome Please Sign Up Here</h1><br><br><br><br><br><br><br>
+    <div class="info">
+    <p style="color: aliceblue;">
+        The gym has a range of membership options to choose from, including:
+    </p> <br> <br> 
+    <p style="color: aliceblue;">
+        Basic Membership - This membership gives you access to the gym's cardio and strength equipment, as well as the locker room facilities. <br>
+        The cost for this membership is ksh 3000 per month.
+    </p> <br> <br>
+    <p style="color: aliceblue;">
+        Premium Membership - In addition to the basic features, this membership also gives you access to group fitness classes and personal training sessions.<br>
+         The cost for this membership is ksh 5000 per month.
+    </p> <br> <br>
+    <p style="color: aliceblue;">
+        Family Membership - This membership is designed for families, and it allows up to four family members to use the gym facilities. <br>
+        The cost for this membership is ksh 10000 per month.
+    </p> <br>
+    <p style="color: aliceblue;">
+        FitLife Gym also offers discounts for students, seniors, and military personnel. <br>
+        Additionally, they often run promotions and deals that can help you save money on your membership.
+    </p> <br>
+    <p style="color: aliceblue;">
+                  To sign up for FitLife Gym, feel the form below or stop by the gym in person. 
+        They will walk you through the different membership options and help you select the best one for your needs.
+    </p> <br><br> <br><br>
+</div>
+<div class="main">
+    <fieldset>
+<form name="fitlife_gym" action="sign up.php" method="post" onsubmit="return validateForm">
+    <h1 id="form_head">Sign Up</h1><br><br><br>
+<span>
+<label>NAME:</label><br /> <br>
+<input class="input" name="name" type="text" value="" required/>
+</span>
+
+<span><br /><br><br>
+<label>PASSWORD:</label><br />
+<input name="password" class="input" type="password" value=""/>
+</span>
+<span><br /><br><br>
+<label>EMAIL:</label><br />
+<input class="input" name="email" type="email" value=""/><br />
+
+</span><br />
+<input class="submit" type="submit" value="submit" />
+</form>
+</fieldset>
+</div>
+     
+    <br><br>
+</div>
+<div class="payment">
+<li>
+<a href="payment.html" style="color: brown;">Click here to procceed to payment</a>
+</li>
+</div>
+
+    <footer class="footer">
+        <div class="enquire">
+            <span>Creative networks</span><br><br>
+        <span> +(254) 712345678</span><br><br>
+        <span>FitLifeGym254@gmail.com</span>
+        </div> 
+        <ul>
+            
+            <li><a href="#"><i class="fa fa-instagram">  instagram</i></a></li> 
+            <li><a href="#"><i class="fa fa-whatsapp">   whatsapp</i></a></li> 
+            <li><a href="#"><i class="fa fa-facebook">   facebook</i></a></li> 
+         </ul>
+            <p>&copy; 2023 FitLife Gym</p>
+        
+    </footer>
+
+    <script>
+        function validateForm(){  
+var name=document.myform.name.value;  
+var password=document.myform.password.value;  
+  
+if (name==null || name==""){  
+  alert("Name can't be blank");  
+  return false;  
+}else if(password.length<6){  
+  alert("Password must be at least 6 characters long.");  
+  return false;  
+  }  
+}  
+        function validateEmail(email) {
+    var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(String(email).toLowerCase());
+  }
+
+  function validateForm() {
+    var email = document.getElementById("email").value;
+    if (validateEmail(email)) {
+      alert("Email address is valid");
+      return true;
+    } else {
+      alert("Email address is not valid");
+      return false;
+    }
+  }
+
+      </script>
+      <script>
+            
+        humburger = document.querySelector(".hamburger");
+        humburger.onclick = function(){
+          navBar = document.querySelector(".nav_bar");
+          navBar.classList.toggle("active");
+}
+      </script>
+</body>  
+</html>  
+</html>
